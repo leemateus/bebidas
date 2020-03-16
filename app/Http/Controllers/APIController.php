@@ -83,4 +83,21 @@ public function login(Request $request)
             'data'      =>  $user
         ], 200);
     }
+
+    public function me()
+    {
+        $aux = response()->json(auth()->user());
+        $token = null;
+
+        if($aux)
+        {
+            return $aux;
+        }
+        else
+        {
+            return response()->json([
+                'message' => 'Invalid Token',
+            ], 401);
+        }
+    }
 }
