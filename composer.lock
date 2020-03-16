@@ -5,10 +5,14 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "a3a336e4b77e64ee97cee0f614f46a8d",
 =======
     "content-hash": "a1eac0aa5579f54f05e02998f298d1d2",
 >>>>>>> master
+=======
+    "content-hash": "a1eac0aa5579f54f05e02998f298d1d2",
+>>>>>>> 4ab7fe8ad1bcc7ba97dbd77da582830d551f84bb
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3171,10 +3175,14 @@
         {
             "name": "tymon/jwt-auth",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "dev-develop",
 =======
             "version": "1.0.0",
 >>>>>>> master
+=======
+            "version": "1.0.0",
+>>>>>>> 4ab7fe8ad1bcc7ba97dbd77da582830d551f84bb
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",

@@ -13,10 +13,14 @@
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "tymon/jwt-auth": "dev-develop"
 =======
         "tymon/jwt-auth": "^1.0"
 >>>>>>> master
+=======
+        "tymon/jwt-auth": "^1.0"
+>>>>>>> 4ab7fe8ad1bcc7ba97dbd77da582830d551f84bb
     },
     "require-dev": {
         "facade/ignition": "^1.4",
