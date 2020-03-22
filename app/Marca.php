@@ -8,5 +8,5 @@ class Marca extends Model
 {
     protected $fillable = ['nome'];
 
-    protected $hodden = ['updated_at', 'created_at'];
+    protected $hidden = ['updated_at', 'created_at'];
 }

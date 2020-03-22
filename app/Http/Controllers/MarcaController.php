@@ -14,7 +14,9 @@ class MarcaController extends Controller
      */
     public function index()
     {
-        //
+        $marcas = Marca::all();
+
+        return Response()->json($marcas);
     }
 
     /**
@@ -35,7 +37,11 @@ class MarcaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $marca = Marca::create([
+            'nome' => $request->nome,
+        ]);
+
+        return Response()->json($marca);
     }
 
     /**
