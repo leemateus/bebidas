@@ -75,7 +75,11 @@ class MarcaController extends Controller
      */
     public function update(Request $request, Marca $marca)
     {
-        //
+        $result = $marca->update([
+            'nome' => $request->nome
+        ]);
+
+        return response()->json($marca);
     }
 
     /**
