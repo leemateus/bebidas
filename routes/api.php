@@ -33,4 +33,6 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::get('marca', 'MarcaController@index');
     Route::post('marca', 'MarcaController@store');
     Route::put('marca/{marca}', 'MarcaController@update');
+    //bebida
+    Route::post('bebida', 'BebidaController@store');
 });
