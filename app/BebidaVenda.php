@@ -14,11 +14,11 @@ class BebidaVenda extends Model
 
     public function venda()
     {
-        return $this->belongsTo(Venda::class, 'venda_id');
+        return $this->belongsTo(Venda::class);
     }
 
     public function bebida()
     {
-        return $this->belongsTo(Bebida::class, 'bebida_id');
+        return $this->belongsTo(Bebida::class);
     }
 }

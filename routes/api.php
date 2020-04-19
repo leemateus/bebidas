@@ -28,7 +28,7 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::put('tasks/{id}', 'TaskController@update');
     Route::delete('tasks/{id}', 'TaskController@destroy');
 
-    Route::post('me', 'APIController@me');
+    Route::get('me', 'APIController@me');
     //Marca
     Route::get('marca', 'MarcaController@index');
     Route::post('marca', 'MarcaController@store');

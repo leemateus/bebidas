@@ -14,11 +14,11 @@ class EntradaBebida extends Model
 
     public function entrada()
     {
-        $this->belongsTo(Entrada::class, 'entrada_id', 'id');
+        $this->belongsTo(Entrada::class);
     }
 
     public function bebida()
     {
-        $this->belongsTo(Bebida::class, 'bebida_id', 'id');
+        $this->belongsTo(Bebida::class);
     }
 }

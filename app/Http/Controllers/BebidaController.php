@@ -35,7 +35,17 @@ class BebidaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bebida = Bebida::create([
+            'ml' => $request->ml,
+            'quantidade' => $request->quantidade,
+            'preco_venda' => $request->preco_venda,
+            'marca_id' => $request->marca_id,
+        ]);
+
+        $bebida->entradaBebida()->create([
+            'quantidade_entrada' => $request->quantidade_entrada,
+            'preco_entrada' => $request->preco_entrada,
+        ]);
     }
 
     /**

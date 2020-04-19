@@ -9,7 +9,7 @@ class Entrada extends Model
 {
     protected $hidden = ['id', 'created_ad', 'update_ad'];
 
-    public function entrada_bebida()
+    public function entradaBebida()
     {
         $this->hasMany(EntradaBebida::class);
     }

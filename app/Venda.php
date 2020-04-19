@@ -13,6 +13,6 @@ class Venda extends Model
 
     public function bebidaVenda()
     {
-        return $this->hasMany(EntradaVenda::class, 'venda_id')
+        return $this->hasMany(EntradaVenda::class, 'venda_id');
     }
 }
