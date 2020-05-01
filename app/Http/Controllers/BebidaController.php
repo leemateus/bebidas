@@ -42,10 +42,7 @@ class BebidaController extends Controller
             'marca_id' => $request->marca_id,
         ]);
 
-        $bebida->entradaBebida()->create([
-            'quantidade_entrada' => $request->quantidade_entrada,
-            'preco_entrada' => $request->preco_entrada,
-        ]);
+        return Response()->json($bebida);
     }
 
     /**

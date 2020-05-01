@@ -15,9 +15,9 @@ class CreateBebidasTable extends Migration
     {
         Schema::create('bebidas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->decimal('ml', 4,2);
+            $table->decimal('ml', 6,2);
             $table->bigInteger('quantidade');
-            $table->decimal('preco_venda', 4, 2);
+            $table->decimal('preco_venda', 6, 2);
 
             $table->unsignedBigInteger('marca_id');
             $table->foreign('marca_id')->references('id')->on('marcas');
