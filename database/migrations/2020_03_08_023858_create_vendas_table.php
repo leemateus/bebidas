@@ -16,7 +16,7 @@ class CreateVendasTable extends Migration
         Schema::create('vendas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('funcionario');
-            $table->decimal('total', 4,2);
+            $table->decimal('total', 6,2);
             $table->timestamps();
         });
     }

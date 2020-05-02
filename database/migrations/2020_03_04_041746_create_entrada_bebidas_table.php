@@ -16,7 +16,7 @@ class CreateEntradaBebidasTable extends Migration
         Schema::create('entrada_bebidas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('quantidade_entrada');
-            $table->decimal('preco_entrada', 4, 2);
+            $table->decimal('preco_entrada', 6, 2);
 
             $table->unsignedBigInteger('bebida_id');
             $table->foreign('bebida_id')->references('id')->on('bebidas');

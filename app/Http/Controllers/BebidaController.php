@@ -14,7 +14,9 @@ class BebidaController extends Controller
      */
     public function index()
     {
-        //
+        $bebida = Bebida::all();
+
+        return Response()->json($bebida);
     }
 
     /**
