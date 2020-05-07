@@ -36,4 +36,6 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     //bebida
     Route::post('bebida', 'BebidaController@store');
     Route::get('bebida', 'BebidaController@index');
+    //entrada
+    Route::post('entrada', 'EntradaController@store');
 });

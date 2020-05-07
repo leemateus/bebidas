@@ -35,7 +35,15 @@ class EntradaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bebida = Entrada::create();
+
+        $bebida->entradaBebida()->create([
+            'quantidade_entrada' => $request->quantidade_entrada,
+            'preco_entrada' => $request->preco_entrada,
+            'bebida_id' => $request->bebida_id,
+        ]);
+
+        return Response()->json($bebida);
     }
 
     /**

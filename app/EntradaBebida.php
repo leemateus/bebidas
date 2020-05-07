@@ -8,9 +8,9 @@ use App\Bebida;
 
 class EntradaBebida extends Model
 {
-    protected $fillable = ['quatidade_entrada', 'preco_entrada'];
+    protected $fillable = ['quantidade_entrada', 'preco_entrada', 'bebida_id'];
 
-    protected $hidden = ['created_at', 'updated_at'];
+    protected $hidden = ['updated_at'];
 
     public function entrada()
     {
