@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Entrada;
+use App\Bebida;
 use Illuminate\Http\Request;
 
 class EntradaController extends Controller
@@ -43,7 +44,15 @@ class EntradaController extends Controller
             'bebida_id' => $request->bebida_id,
         ]);
 
-        return Response()->json($bebida);
+        $bebida_atual = Bebida::where('id', '=', $request->bebida_id)->first();
+
+        $obj_bebida = new Bebida();
+
+        $atualiza_quantidade_bebida = $obj_bebida->where('id', '=', $request->bebida_id)->update([
+            'quantidade' => $bebida_atual->quantidade + $request->quantidade_entrada,
+        ]);
+
+        return Response()->json($bebida_atual->quantidade + $request->quantidade_entrada);
     }
 
     /**
