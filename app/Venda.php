@@ -7,9 +7,13 @@ use App\EntradaVenda;
 
 class Venda extends Model
 {
-    Protected $fillable = ['total'];
+    Protected $fillable = ['total', 'id', 'created_at', 'funcionario'];
 
     Protected $hidden = ['updated_at'];
+
+    Protected $attributes = [
+        'total' => 0.0,
+    ];
 
     public function bebidaVenda()
     {

@@ -31,11 +31,15 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::get('me', 'APIController@me');
     //Marca
     Route::get('marca', 'MarcaController@index');
+    Route::get('marca{marca}', 'MarcaController@show');
     Route::post('marca', 'MarcaController@store');
     Route::put('marca/{marca}', 'MarcaController@update');
     //bebida
     Route::post('bebida', 'BebidaController@store');
     Route::get('bebida', 'BebidaController@index');
+    Route::get('bebida/{bebida}', 'BebidaController@show');
     //entrada
     Route::post('entrada', 'EntradaController@store');
+    //vendas
+    Route::post('venda', 'VendaController@store');
 });

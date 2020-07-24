@@ -9,7 +9,7 @@ use App\BebidaVenda;
 
 class Bebida extends Model
 {
-    protected $fillable = ['ml', 'preco_venda', 'marca_id', 'quantidade'];
+    protected $fillable = ['ml', 'preco_venda', 'marca_id', 'quantidade', 'id'];
 
     protected $hidden = ['updated_at'];
 

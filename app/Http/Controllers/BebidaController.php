@@ -55,7 +55,7 @@ class BebidaController extends Controller
      */
     public function show(Bebida $bebida)
     {
-        //
+        return Response()->json($bebida);
     }
 
     /**

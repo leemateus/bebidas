@@ -35,7 +35,13 @@ class VendaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $venda = Venda::create([
+            'funcionario' => $request->funcionario,
+        ]);
+
+        return Response()->json($venda);
+
+        // dd("test");
     }
 
     /**
@@ -81,5 +87,10 @@ class VendaController extends Controller
     public function destroy(Venda $venda)
     {
         //
+    }
+
+    public function addCarrinho()
+    {
+
     }
 }
